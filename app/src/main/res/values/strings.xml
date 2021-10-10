@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sorteador</string>
+    <string name="exemple_100">Ex: 100</string>
+    <string name="example_1">Ex: 1</string>
+    <string name="and">e</string>
+    <string name="raffle_between">Sortear entre</string>
+    <string name="raffle">SORTEAR</string>
+    <string name="example_80">80</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_app"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/example_80"
+        android:textColor="@color/primary_green"
+        android:textSize="60sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/logo_app"
+        app:layout_constraintStart_toStartOf="@+id/logo_app"
+        app:layout_constraintTop_toBottomOf="@+id/logo_app"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView_raffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/raffle_between"
+        android:textColor="@color/text_view_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_result" />
+
+    <EditText
+        android:id="@+id/editText_min"
+        android:layout_width="102dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_bg"
+        android:ems="10"
+        android:hint="@string/example_1"
+        android:maxLength="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_raffle" />
+
+    <EditText
+        android:id="@+id/editText_max"
+        android:layout_width="102dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/my_bg"
+        android:ems="10"
+        android:hint="@string/exemple_100"
+        android:maxLength="5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_raffle" />
+
+    <TextView
+        android:id="@+id/textView_and"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/and"
+        android:textColor="@color/text_view_color"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_min"
+        app:layout_constraintEnd_toStartOf="@+id/editText_max"
+        app:layout_constraintStart_toEndOf="@+id/editText_min"
+        app:layout_constraintTop_toBottomOf="@+id/textView_raffle"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/text_btn_result"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+        android:background="@drawable/my_bg_gradient"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="@string/raffle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_min" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
